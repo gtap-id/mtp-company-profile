@@ -3,11 +3,11 @@ import { products } from "../constants";
 import { useNavigate } from "react-router-dom";
 
 const Products = () => {
-
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-center gap-8 relative">
+      <span className="anchor" id="products"></span>
       <h1 className="text-2xl font-bold border-b-4 border-b-secondary px-3 py-1">
         Products
       </h1>

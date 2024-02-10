@@ -1,11 +1,9 @@
-import React from "react";
 import { stats, lineBusiness } from "../constants";
-import photo from "../assets/photo1.png";
-import { ArchiveBoxArrowDownIcon } from "@heroicons/react/24/solid";
 
 const About = () => {
   return (
-    <div className="flex flex-col text-primary gap-16 pt-20">
+    <div className="flex flex-col text-primary gap-16 pt-20 relative">
+      <span className="anchor" id="about"></span>
       <div className="flex gap-16 items-center justify-center">
         <div className="basis-1/2 md:flex justify-center hidden">
           <div className="transition-all duration-300 bg-[url('/src/assets/photo1.png')] w-[25rem] bg-cover bg-center bg-no-repeat square rounded-3xl hover:scale-110"></div>

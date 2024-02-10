@@ -12,16 +12,27 @@ import generator from "../assets/generator.jpg";
 import gantryCrane from "../assets/gantry-crane.jpg";
 import overheadCrane from "../assets/overhead-crane.jpg";
 
-import logoMeidoh from "../assets/logo-meidoh.png"
-import logoCitra from "../assets/logo_citra.png"
-import logoCSS from "../assets/logo_css-group.png"
-import logoIndofood from "../assets/logo_indofood.png"
-import logoIndopoly from "../assets/logo_indopoly.png"
-import logoHM from "../assets/logo_pt-hm-sampoerna.png"
-import logoSPI from "../assets/logo_pt-spi.png"
-import logoSemenJakarta from "../assets/logo_semen-jakarta.png"
-import logoSemenMerahPutih from "../assets/logo_semen-merah-putih.png"
-import logoUnioleo from "../assets/logo_unioleo.png"
+import logoMeidoh from "../assets/logo-meidoh.png";
+import logoCitra from "../assets/logo_citra.png";
+import logoCSS from "../assets/logo_css-group.png";
+import logoIndofood from "../assets/logo_indofood.png";
+import logoIndopoly from "../assets/logo_indopoly.png";
+import logoHM from "../assets/logo_pt-hm-sampoerna.png";
+import logoSPI from "../assets/logo_pt-spi.png";
+import logoSemenJakarta from "../assets/logo_semen-jakarta.png";
+import logoSemenMerahPutih from "../assets/logo_semen-merah-putih.png";
+import logoUnioleo from "../assets/logo_unioleo.png";
+
+import gallery1 from "../assets/gallery/gallery (1).jpg";
+import gallery2 from "../assets/gallery/gallery (2).jpg";
+import gallery3 from "../assets/gallery/gallery (3).jpg";
+import gallery4 from "../assets/gallery/gallery (4).jpg";
+import gallery5 from "../assets/gallery/gallery (5).jpg";
+import gallery6 from "../assets/gallery/gallery (6).jpg";
+import gallery7 from "../assets/gallery/gallery (7).jpg";
+import gallery8 from "../assets/gallery/gallery (8).jpg";
+import gallery9 from "../assets/gallery/gallery (9).jpg";
+import gallery10 from "../assets/gallery/gallery (10).jpg";
 
 export const nav = [
   {
@@ -123,7 +134,7 @@ export const customers = [
     name: "Unioleo",
     logo: logoUnioleo,
   },
-]
+];
 
 export const products = [
   {
@@ -175,3 +186,56 @@ export const products = [
 export function getCategory(categoryId: any) {
   return products.find(({ id }) => categoryId === id);
 }
+
+export const galleries = [
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery1,
+  },
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery2,
+  },
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery3,
+  },
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery4,
+  },
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery5,
+  },
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery6,
+  },
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery7,
+  },
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery8,
+  },
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery9,
+  },
+  {
+    title: "",
+    subtitle: "",
+    photo: gallery10,
+  },
+];

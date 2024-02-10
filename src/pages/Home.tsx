@@ -28,7 +28,7 @@ const Home = () => {
           <Hero />
         </div>
       </div>
-      <div id="about" className="flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <div className="flex flex-col items-center w-full">
           <div className="xl:max-w-[1360px] w-full ">
             <div className="sm:px-16 px-6 sm:py-16 py-6">
