@@ -195,7 +195,7 @@ export const galleries = [
   {
     id: "1",
     title: "Project Bla Bla Bla1",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -210,7 +210,7 @@ export const galleries = [
   {
     id: "2",
     title: "Project Bla Bla Bla2",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -225,7 +225,7 @@ export const galleries = [
   {
     id: "3",
     title: "Project Bla Bla Bla3",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -240,7 +240,7 @@ export const galleries = [
   {
     id: "4",
     title: "Project Bla Bla Bla4",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -255,7 +255,7 @@ export const galleries = [
   {
     id: "5",
     title: "Project Bla Bla Bla5",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -270,7 +270,7 @@ export const galleries = [
   {
     id: "6",
     title: "Project Bla Bla Bla6",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -285,7 +285,7 @@ export const galleries = [
   {
     id: "7",
     title: "Project Bla Bla Bla7",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -300,7 +300,7 @@ export const galleries = [
   {
     id: "8",
     title: "Project Bla Bla Bla8",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -315,7 +315,7 @@ export const galleries = [
   {
     id: "9",
     title: "Project Bla Bla Bla9",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -330,7 +330,7 @@ export const galleries = [
   {
     id: "10",
     title: "Project Bla Bla Bla10",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -345,7 +345,7 @@ export const galleries = [
   {
     id: "11",
     title: "Project Bla Bla Bla11",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -360,7 +360,7 @@ export const galleries = [
   {
     id: "12",
     title: "Project Bla Bla Bla12",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -375,7 +375,7 @@ export const galleries = [
   {
     id: "13",
     title: "Project Bla Bla Bla13",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
@@ -390,7 +390,7 @@ export const galleries = [
   {
     id: "14",
     title: "Project Bla Bla Bla14",
-    subtitle: "PT Bulu Dada",
+    subtitle: "PT Ayam Jago",
     product: [
       {
         category: "",
