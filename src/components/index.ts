@@ -5,6 +5,7 @@ import Products from './Products';
 import Gallery from './Gallery';
 import Testimonials from './Testimonials';
 import Customers from './Customers';
+import Footer from './Footer';
 
 export {
     Hero,
@@ -13,5 +14,6 @@ export {
     Products,
     Gallery,
     Testimonials,
-    Customers
+    Customers,
+    Footer
 };

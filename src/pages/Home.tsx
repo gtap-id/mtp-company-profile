@@ -1,6 +1,4 @@
-import React, { useRef } from "react";
 import {
-  Navbar,
   Hero,
   About,
   Products,
@@ -18,8 +16,7 @@ const Home = () => {
   //  };
 
   return (
-    <div className="w-full overflow-hidden">
-      <Navbar />
+    <>
       <div
         id="home"
         className="bg-hero bg-cover bg-no-repeat bg-center xl:bg-top flex justify-center items-center"
@@ -58,10 +55,10 @@ const Home = () => {
             <div className="sm:px-16 px-6 sm:py-16 py-6">
               <Testimonials />
             </div>
-          </div>
+          </div>          
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

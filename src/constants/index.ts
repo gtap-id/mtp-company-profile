@@ -8,9 +8,9 @@ import cargoLift from "../assets/cargo-lift.jpg";
 import passengerLift from "../assets/passenger-lift.jpg";
 import chainHoist from "../assets/chain-hoist.jpg";
 import ropeHoist from "../assets/rope-hoist.jpg";
-import generator from "../assets/generator.jpg";
-import gantryCrane from "../assets/gantry-crane.jpg";
-import overheadCrane from "../assets/overhead-crane.jpg";
+// import generator from "../assets/generator.jpg";
+// import gantryCrane from "../assets/gantry-crane.jpg";
+// import overheadCrane from "../assets/overhead-crane.jpg";
 
 import logoMeidoh from "../assets/logo-meidoh.png";
 import logoCitra from "../assets/logo_citra.png";
@@ -33,6 +33,10 @@ import gallery7 from "../assets/gallery/gallery (7).jpg";
 import gallery8 from "../assets/gallery/gallery (8).jpg";
 import gallery9 from "../assets/gallery/gallery (9).jpg";
 import gallery10 from "../assets/gallery/gallery (10).jpg";
+import gallery11 from "../assets/gallery/gallery (11).jpg";
+import gallery12 from "../assets/gallery/gallery (12).jpg";
+import gallery13 from "../assets/gallery/gallery (13).jpg";
+import gallery14 from "../assets/gallery/gallery (14).jpg";
 
 export const nav = [
   {
@@ -189,53 +193,217 @@ export function getCategory(categoryId: any) {
 
 export const galleries = [
   {
-    title: "",
-    subtitle: "",
+    id: "1",
+    title: "Project Bla Bla Bla1",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery1,
   },
   {
-    title: "",
-    subtitle: "",
+    id: "2",
+    title: "Project Bla Bla Bla2",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery2,
   },
   {
-    title: "",
-    subtitle: "",
+    id: "3",
+    title: "Project Bla Bla Bla3",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery3,
   },
   {
-    title: "",
-    subtitle: "",
+    id: "4",
+    title: "Project Bla Bla Bla4",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery4,
   },
   {
-    title: "",
-    subtitle: "",
+    id: "5",
+    title: "Project Bla Bla Bla5",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery5,
   },
   {
-    title: "",
-    subtitle: "",
+    id: "6",
+    title: "Project Bla Bla Bla6",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery6,
   },
   {
-    title: "",
-    subtitle: "",
+    id: "7",
+    title: "Project Bla Bla Bla7",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery7,
   },
   {
-    title: "",
-    subtitle: "",
+    id: "8",
+    title: "Project Bla Bla Bla8",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery8,
   },
   {
-    title: "",
-    subtitle: "",
+    id: "9",
+    title: "Project Bla Bla Bla9",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery9,
   },
   {
-    title: "",
-    subtitle: "",
+    id: "10",
+    title: "Project Bla Bla Bla10",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
     photo: gallery10,
   },
+  {
+    id: "11",
+    title: "Project Bla Bla Bla11",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
+    photo: gallery11,
+  },
+  {
+    id: "12",
+    title: "Project Bla Bla Bla12",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
+    photo: gallery12,
+  },
+  {
+    id: "13",
+    title: "Project Bla Bla Bla13",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
+    photo: gallery13,
+  },
+  {
+    id: "14",
+    title: "Project Bla Bla Bla14",
+    subtitle: "PT Bulu Dada",
+    product: [
+      {
+        category: "",
+        categoryId: "",
+        product: "",
+        productId: ""
+      }
+    ],
+    location: "",
+    photo: gallery14,
+  },
 ];
+
+export const getGallery = ( galleryId: any ) => {
+  return galleries.find(({id}) => galleryId === id);
+}
