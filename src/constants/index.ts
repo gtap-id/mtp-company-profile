@@ -404,6 +404,6 @@ export const galleries = [
   },
 ];
 
-export const getGallery = ( galleryId: any ) => {
+export const getGallery = ( galleryId: string ) => {
   return galleries.find(({id}) => galleryId === id);
 }
