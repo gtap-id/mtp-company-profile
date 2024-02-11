@@ -20,7 +20,7 @@ const About = () => {
             elit, porttitor quis facilisis at.
           </p>
           <div className="flex gap-6 mt-4">
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div
                 key={stat.id}
                 className="bg-primary text-white py-2 px-4 rounded-xl"
@@ -37,7 +37,7 @@ const About = () => {
           Line Business
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-16 gap-y-10">
-          {lineBusiness.map((line, index) => (
+          {lineBusiness.map((line) => (
             <div
               id={line.name}
               className="flex sm:flex-row flex-col gap-8 bg-light-gray px-8 py-16 rounded-2xl items-center"

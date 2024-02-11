@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = () => {
   return (
     <div className="flex text-primary gap-4 min-h-screen items-center">

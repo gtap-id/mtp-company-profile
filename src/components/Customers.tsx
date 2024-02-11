@@ -102,7 +102,7 @@ const Customers = () => {
           onMouseUp={handleMouseUp}
           onMouseMove={handleMouseMove}
         >
-          {customers.map((customer, index) => (
+          {customers.map((customer) => (
             <img
               draggable={false}
               className="md:min-w-[150px] min-w-[100px] select-none "
