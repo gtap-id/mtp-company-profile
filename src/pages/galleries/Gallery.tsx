@@ -4,6 +4,9 @@ import { getGallery } from "../../constants";
 
 const Gallery = () => {
   const { id } = useParams();
+  if (!id) {
+    throw new Error("Error: Apalah");
+  }
   const gallery = useMemo(() => getGallery(id), [id]);
 
   if (!gallery) {

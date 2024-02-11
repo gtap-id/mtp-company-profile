@@ -187,7 +187,7 @@ export const products = [
   },
 ];
 
-export function getCategory(categoryId: any) {
+export function getCategory(categoryId:string) {
   return products.find(({ id }) => categoryId === id);
 }
 

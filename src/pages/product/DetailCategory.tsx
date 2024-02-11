@@ -4,6 +4,10 @@ import { getCategory } from "../../constants";
 
 const DetailCategory = () => {
   const { id } = useParams();
+  if (!id) {
+    throw new Error("Error: Apalah")
+  }
+
   const category = useMemo(() => getCategory(id), [id]);
   const navigate = useNavigate();
 

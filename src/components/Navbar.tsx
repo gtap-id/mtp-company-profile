@@ -25,7 +25,7 @@ const Navbar = () => {
     } else {
       setIsHome(0);
     }
-  });
+  }, [location.pathname]);
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
