@@ -45,20 +45,28 @@ const Footer = () => {
                     </ul>
                     <div className="flex gap-6">
                       <div className="flex flex-col justify-center items-center hover:scale-110 hover:text-secondary cursor-pointer">
-                        <RiWhatsappFill className="w-12 h-12" />
-                        John
+                        <a href="https://wa.me/">
+                          <RiWhatsappFill className="w-12 h-12" />
+                          John
+                        </a>
                       </div>
                       <div className="flex flex-col justify-center items-center hover:scale-110 hover:text-secondary cursor-pointer">
-                        <RiWhatsappFill className="w-12 h-12" />
-                        Ryan
+                        <a href="https://wa.me/">
+                          <RiWhatsappFill className="w-12 h-12" />
+                          Ryan
+                        </a>
                       </div>
                       <div className="flex flex-col justify-center items-center hover:scale-110 hover:text-secondary cursor-pointer">
-                        <RiWhatsappFill className="w-12 h-12" />
-                        Alex
+                        <a href="https://wa.me/">
+                          <RiWhatsappFill className="w-12 h-12" />
+                          Alex
+                        </a>
                       </div>
                       <div className="flex flex-col justify-center items-center hover:scale-110 hover:text-secondary cursor-pointer">
-                        <RiWhatsappFill className="w-12 h-12" />
-                        Bayu
+                        <a href="https://wa.me/">
+                          <RiWhatsappFill className="w-12 h-12" />
+                          Bayu
+                        </a>
                       </div>
                     </div>
                   </div>

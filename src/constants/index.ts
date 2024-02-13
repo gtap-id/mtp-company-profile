@@ -146,6 +146,19 @@ export const products = [
     name: "Chain Hoist",
     product: [
       {
+        id: "product1",
+        name: "product",
+        photo: chainHoist,
+        description: "Lorem ipsum dolor sit amet.",
+      },
+      {
+        id: "product2",
+        name: "product",
+        photo: chainHoist,
+        description: "Lorem ipsum dolor sit amet.",
+      },
+      {
+        id: "product3",
         name: "product",
         photo: chainHoist,
         description: "Lorem ipsum dolor sit amet.",
@@ -157,6 +170,19 @@ export const products = [
     name: "Rope Hoist",
     product: [
       {
+        id: "product4",
+        name: "product",
+        photo: ropeHoist,
+        description: "Lorem ipsum dolor sit amet.",
+      },
+      {
+        id: "product5",
+        name: "product",
+        photo: ropeHoist,
+        description: "Lorem ipsum dolor sit amet.",
+      },
+      {
+        id: "product6",
         name: "product",
         photo: ropeHoist,
         description: "Lorem ipsum dolor sit amet.",
@@ -168,6 +194,19 @@ export const products = [
     name: "Cargo Lift",
     product: [
       {
+        id: "product7",
+        name: "product",
+        photo: cargoLift,
+        description: "Lorem ipsum dolor sit amet.",
+      },
+      {
+        id: "product8",
+        name: "product",
+        photo: cargoLift,
+        description: "Lorem ipsum dolor sit amet.",
+      },
+      {
+        id: "product9",
         name: "product",
         photo: cargoLift,
         description: "Lorem ipsum dolor sit amet.",
@@ -179,6 +218,19 @@ export const products = [
     name: "Passenger Lift",
     product: [
       {
+        id: "product10",
+        name: "product",
+        photo: passengerLift,
+        description: "Lorem ipsum dolor sit amet.",
+      },
+      {
+        id: "product11",
+        name: "product",
+        photo: passengerLift,
+        description: "Lorem ipsum dolor sit amet.",
+      },
+      {
+        id: "product12",
         name: "product",
         photo: passengerLift,
         description: "Lorem ipsum dolor sit amet.",
@@ -191,11 +243,21 @@ export function getCategory(categoryId:string) {
   return products.find(({ id }) => categoryId === id);
 }
 
+export function getProduct(categoryId:string, productId: string) {
+  const category = getCategory(categoryId);
+  if (category) {
+    return category.product.find(({ id }) => productId === id);
+  }
+  return null;
+}
+ 
+
 export const galleries = [
   {
     id: "1",
     title: "Project Bla Bla Bla1",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -204,13 +266,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery1,
   },
   {
     id: "2",
     title: "Project Bla Bla Bla2",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -219,13 +283,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery2,
   },
   {
     id: "3",
     title: "Project Bla Bla Bla3",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -234,13 +300,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery3,
   },
   {
     id: "4",
     title: "Project Bla Bla Bla4",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -249,13 +317,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery4,
   },
   {
     id: "5",
     title: "Project Bla Bla Bla5",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -264,13 +334,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery5,
   },
   {
     id: "6",
     title: "Project Bla Bla Bla6",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -279,13 +351,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery6,
   },
   {
     id: "7",
     title: "Project Bla Bla Bla7",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -294,13 +368,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery7,
   },
   {
     id: "8",
     title: "Project Bla Bla Bla8",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -309,13 +385,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery8,
   },
   {
     id: "9",
     title: "Project Bla Bla Bla9",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -324,13 +402,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery9,
   },
   {
     id: "10",
     title: "Project Bla Bla Bla10",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -339,13 +419,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery10,
   },
   {
     id: "11",
     title: "Project Bla Bla Bla11",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -354,13 +436,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery11,
   },
   {
     id: "12",
     title: "Project Bla Bla Bla12",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -369,13 +453,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery12,
   },
   {
     id: "13",
     title: "Project Bla Bla Bla13",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -384,13 +470,15 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery13,
   },
   {
     id: "14",
     title: "Project Bla Bla Bla14",
     subtitle: "PT Ayam Jago",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
@@ -399,7 +487,8 @@ export const galleries = [
         productId: ""
       }
     ],
-    location: "",
+    location: "Location A, Location B",
+    date: "12/02/2024",
     photo: gallery14,
   },
 ];

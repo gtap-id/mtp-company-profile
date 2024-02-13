@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import { Gallery as Galleries } from "./components";
 import Layout from "./Layout";
 import Gallery from "./pages/galleries/Gallery";
+import DetailProduct from "./pages/product/DetailProduct";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/category/:id" element={<DetailCategory />} />
+          <Route path="/category/:categoryId/:productId" element={<DetailProduct />} />
           <Route path="/gallery" element={<Galleries />} />
           <Route path="/gallery/:id" element={<Gallery />} />
           <Route path="/notfound" element={<NotFound />} />

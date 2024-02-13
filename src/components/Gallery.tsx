@@ -50,7 +50,7 @@ const Gallery = () => {
           {galleries.slice(0, 12).map((gallery) => (
             <div
               key={gallery.id}
-              onClick={() => navigate(`/gallery/${gallery.id}`)}
+              onClick={() =>  navigate(`/gallery/${gallery.id}`)}
               className="transition-all duration-150 break-inside-avoid hover:scale-105 lg:hover:rounded-2xl hover:rounded-lg overflow-hidden hover:shadow-2xl relative"
             >
               <div className="group w-full h-full absolute left-0 top-0 cursor-zoom-in">

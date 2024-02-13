@@ -5,7 +5,7 @@ import { getCategory } from "../../constants";
 const DetailCategory = () => {
   const { id } = useParams();
   if (!id) {
-    throw new Error("Error: Apalah")
+    throw new Error("Error: id identified as undefined");
   }
 
   const category = useMemo(() => getCategory(id), [id]);
@@ -32,7 +32,7 @@ const DetailCategory = () => {
                   className={
                     "rounded-lg w-full rectangle flex items-end overflow-hidden bg-center bg-contain bg-no-repeat cursor-pointer"
                   }
-                  onClick={() => navigate(`/category/${category.id}`)}
+                  onClick={() => navigate(`/category/${category.id}/${product.id}`)}
                 >
                   <div className="text-white w-full bg-secondary px-4 py-6">
                     <h1>{product.name}</h1>
