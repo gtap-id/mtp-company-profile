@@ -49,7 +49,7 @@ const Navbar = () => {
     <>
       <div
         className={clsx(
-          "transition-all duration-100 absolute w-full flex justify-center items-center text-white shadow-none py-5 md:px-16 px-10 z-10",
+          "transition-all duration-100 absolute w-full flex justify-center items-center text-white shadow-none py-5 md:px-12 px-10 z-10",
           navState == 1 && "!fixed bg-white !text-primary !shadow-lg !py-9",
           isHome == 1 && "!text-primary bg-white"
         )}
@@ -76,7 +76,7 @@ const Navbar = () => {
                 </div>
               ) : (
                 <>
-                  <ul className="list-none sm:flex hidden items-center gap-4 lg:gap-10 md:pr-12">
+                  <ul className="list-none sm:flex hidden items-center gap-4 lg:gap-8">
                     {nav.map((nav) => (
                       <li
                         key={nav.id}
@@ -85,6 +85,12 @@ const Navbar = () => {
                         <a href={`/#${nav.id}`}>{nav.title}</a>
                       </li>
                     ))}
+                    <a
+                      className="bg-secondary rounded-lg px-4 py-2 font-semibold text-white text-sm"
+                      href=""
+                    >
+                      Contact Us
+                    </a>
                   </ul>
                   <Bars3BottomRightIcon
                     onClick={handleNav}

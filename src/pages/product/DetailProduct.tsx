@@ -1,8 +1,7 @@
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { getProduct } from "../../constants";
-import { CalendarDaysIcon } from "@heroicons/react/24/outline";
-import { MapPinIcon } from "@heroicons/react/24/solid";
+import { MapPinIcon, TagIcon } from "@heroicons/react/24/solid";
 import { Customers } from "../../components";
 
 const DetailProduct = () => {
@@ -13,14 +12,21 @@ const DetailProduct = () => {
   }
 
   if (!productId) {
-      throw new Error("Error: product id identified as undefined")
+    throw new Error("Error: product id identified as undefined");
   }
 
-  const product = useMemo(() => getProduct(categoryId, productId), [categoryId, productId]);
+  const product = useMemo(
+    () => getProduct(categoryId, productId),
+    [categoryId, productId]
+  );
 
   if (!product) {
     return <Navigate to="/notfound" />;
   }
+
+  useEffect(() => {
+    document.title = "Jual " + product.name + " | Manunggal Corp";
+  }, []);
 
   return (
     <div className="w-full flex justify-center mt-14">
@@ -30,8 +36,6 @@ const DetailProduct = () => {
             <span className="anchor"></span>
             <div className="text-center">
               <h1 className="text-lg">{product.name}</h1>
-              <h1 className="text-2xl font-bold border-b-4 border-b-secondary px-3 py-1">
-              </h1>
             </div>
             <div className="flex flex-col sm:gap-12 gap-8 w-full">
               <div className="flex sm:flex-row flex-col w-full bg-slate-100 shadow-lg overflow-hidden rounded-xl">
@@ -44,13 +48,22 @@ const DetailProduct = () => {
                 </div>
                 <div className="basis-5/12 flex flex-col gap-6 py-4 px-6">
                   <h1 className="text-center text-lg font-medium">
+                    {product.name}
                   </h1>
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-2">
-                      <CalendarDaysIcon className="w-6" />
+                      <div className="flex items-center gap-2 font-semibold">
+                        <MapPinIcon className="w-6" />
+                        Manufacturer :
+                      </div>
+                      {product.manufacture}
                     </div>
                     <div className="flex items-center gap-2">
-                      <MapPinIcon className="w-6" />
+                      <div className="flex items-center gap-2 font-semibold">
+                        <TagIcon className="w-6" />
+                        Brand :
+                      </div>
+                      {product.brand}
                     </div>
                   </div>
                 </div>

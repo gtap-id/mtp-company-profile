@@ -6,7 +6,7 @@ const About = () => {
       <span className="anchor" id="about"></span>
       <div className="flex gap-16 items-center justify-center">
         <div className="basis-1/2 md:flex justify-center hidden">
-          <div className="transition-all duration-300 bg-[url('/src/assets/photo1.png')] w-[25rem] bg-cover bg-center bg-no-repeat square rounded-3xl hover:scale-110"></div>
+          <div className="transition-all duration-300 bg-thumbnail w-[25rem] bg-cover bg-center bg-no-repeat square rounded-3xl hover:scale-110"></div>
         </div>
         <div className="md:basis-1/2 flex flex-col items-center gap-6">
           <h1 className="text-2xl font-bold border-b-4 border-b-secondary px-3 py-1">

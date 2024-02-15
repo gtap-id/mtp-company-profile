@@ -144,22 +144,29 @@ export const products = [
   {
     id: "chain-hoist",
     name: "Chain Hoist",
+    header: "",
     product: [
       {
         id: "product1",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: chainHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
         id: "product2",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: chainHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
         id: "product3",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: chainHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -168,22 +175,29 @@ export const products = [
   {
     id: "rope-hoist",
     name: "Rope Hoist",
+    header: "",
     product: [
       {
         id: "product4",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: ropeHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
         id: "product5",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: ropeHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
         id: "product6",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: ropeHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -192,22 +206,29 @@ export const products = [
   {
     id: "cargo-lift",
     name: "Cargo Lift",
+    header: "",
     product: [
       {
         id: "product7",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: cargoLift,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
         id: "product8",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: cargoLift,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
         id: "product9",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: cargoLift,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -216,22 +237,29 @@ export const products = [
   {
     id: "passenger-lift",
     name: "Passenger Lift",
+    header: "",
     product: [
       {
         id: "product10",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: passengerLift,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
         id: "product11",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: passengerLift,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
         id: "product12",
         name: "product",
+        brand: "brand",
+        manufacture: "Location A, Location B",
         photo: passengerLift,
         description: "Lorem ipsum dolor sit amet.",
       },

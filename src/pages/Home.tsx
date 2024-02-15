@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Hero,
   About,
@@ -8,12 +9,9 @@ import {
 } from "../components";
 
 const Home = () => {
-  // const [navigate, setNavigate] = React.useState(null);
-  // const ref = useRef(navigate);
-
-  //  const scrollToElement = () => {
-  //    ref.current?.scrollIntoView({ behavior: "smooth" });
-  //  };
+  useEffect(() => {
+    document.title = "Manunggal Corp | Lorem ipsum ";
+  }, []);
 
   return (
     <>
@@ -53,9 +51,9 @@ const Home = () => {
           </div>
           <div className="xl:max-w-[1360px] w-full ">
             <div className="sm:px-16 px-6 sm:py-16 py-6">
-              <Testimonials />
+              {/* <Testimonials /> */}
             </div>
-          </div>          
+          </div>
         </div>
       </div>
     </>

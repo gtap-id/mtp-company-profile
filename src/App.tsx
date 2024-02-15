@@ -9,18 +9,23 @@ import DetailProduct from "./pages/product/DetailProduct";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/category/:id" element={<DetailCategory />} />
-          <Route path="/category/:categoryId/:productId" element={<DetailProduct />} />
-          <Route path="/gallery" element={<Galleries />} />
-          <Route path="/gallery/:id" element={<Gallery />} />
-          <Route path="/notfound" element={<NotFound />} />
-        </Route>
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/product/:id" element={<DetailCategory />} />
+            <Route
+              path="/product/:categoryId/:productId"
+              element={<DetailProduct />}
+            />
+            <Route path="/gallery" element={<Galleries />} />
+            <Route path="/gallery/:id" element={<Gallery />} />
+            <Route path="/notfound" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </Router>
+    </>
   );
 };
 
