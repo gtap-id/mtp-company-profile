@@ -3,6 +3,7 @@ import { Navigate, useParams } from "react-router-dom";
 import { getProduct } from "../../constants";
 import { MapPinIcon, TagIcon } from "@heroicons/react/24/solid";
 import { Customers } from "../../components";
+import { RiWhatsappFill } from "@remixicon/react";
 
 const DetailProduct = () => {
   const { categoryId } = useParams();
@@ -50,26 +51,47 @@ const DetailProduct = () => {
                   <h1 className="text-center text-lg font-medium">
                     {product.name}
                   </h1>
-                  <div className="flex flex-col gap-2">
-                    <div className="flex items-center gap-2">
-                      <div className="flex items-center gap-2 font-semibold">
-                        <MapPinIcon className="w-6" />
-                        Manufacturer :
+                  <div className="flex flex-col justify-between h-full">
+                    <div className="flex flex-col gap-2">
+                      <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2 font-semibold">
+                          <TagIcon className="w-6" />
+                          Brand :
+                        </div>
+                        {product.brand}
                       </div>
-                      {product.manufacture}
                     </div>
-                    <div className="flex items-center gap-2">
-                      <div className="flex items-center gap-2 font-semibold">
-                        <TagIcon className="w-6" />
-                        Brand :
+                    <div className="flex flex-col gap-4 items-center p-12">
+                      <div className="flex flex-col items-center">
+                        <h1 className="text-center font-semibold">
+                          Contact Whatsapp
+                        </h1>
+                        <p>Hubungi salah satu sales dibawah ini :</p>
                       </div>
-                      {product.brand}
+                      <div className="flex gap-4 text-primary">
+                        {product.contact.map((contact) => (
+                          <a
+                            className="flex flex-col items-center hover:text-secondary cursor-pointer"
+                            href={`https://wa.me/${contact.number}`}
+                          >
+                            <RiWhatsappFill className="sm:w-12 w-10 sm:h-12 h-10" />
+                            {contact.name}
+                          </a>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="sm:px-8 px-5">
                 <p className="text-justify">{product.description}</p>
+                <div className="flex sm:flex-row flex-col gap-2 mt-8">
+                  <div className="flex items-center gap-2 font-semibold">
+                    <MapPinIcon className="w-6" />
+                    Manufacturer :
+                  </div>
+                  {product.manufacture}
+                </div>
               </div>
               <hr />
               <Customers />

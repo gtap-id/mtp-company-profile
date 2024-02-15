@@ -151,6 +151,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: chainHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -159,6 +173,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: chainHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -167,6 +195,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: chainHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -182,6 +224,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: ropeHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -190,6 +246,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: ropeHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -198,6 +268,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: ropeHoist,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -213,6 +297,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: cargoLift,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -221,6 +319,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: cargoLift,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -229,6 +341,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: cargoLift,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -244,6 +370,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: passengerLift,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -252,6 +392,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: passengerLift,
         description: "Lorem ipsum dolor sit amet.",
       },
@@ -260,6 +414,20 @@ export const products = [
         name: "product",
         brand: "brand",
         manufacture: "Location A, Location B",
+        contact: [
+          {
+            name: "Bayu",
+            number: "",
+          },
+          {
+            name: "Adi",
+            number: "",
+          },
+          {
+            name: "Ida",
+            number: "",
+          },
+        ],
         photo: passengerLift,
         description: "Lorem ipsum dolor sit amet.",
       },
