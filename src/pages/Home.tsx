@@ -4,7 +4,6 @@ import {
   About,
   Products,
   Gallery,
-  Testimonials,
   Customers,
 } from "../components";
 

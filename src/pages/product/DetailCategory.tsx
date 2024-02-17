@@ -11,12 +11,15 @@ const DetailCategory = () => {
   const category = useMemo(() => getCategory(id), [id]);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (category) {
+      document.title = "Jual " + category.name + " | Manunggal Corp";
+    }
+  }, [category]);
+
   if (!category) {
     return <Navigate to="/notfound" replace />;
   } else {
-    useEffect(() => {
-      document.title = "Jual " + category.name + " | Manunggal Corp";
-    }, []);
     return (
       <div className="flex justify-center items-center mt-12">
         <div className="xl:max-w-[1360px] w-full flex flex-col items-center">

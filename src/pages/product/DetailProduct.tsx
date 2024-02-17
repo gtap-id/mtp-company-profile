@@ -21,14 +21,15 @@ const DetailProduct = () => {
     [categoryId, productId]
   );
 
+  useEffect(() => {
+    if (product) {
+      document.title = "Jual " + product.name + " | Manunggal Corp";
+    }
+  }, [product]);
+
   if (!product) {
     return <Navigate to="/notfound" />;
-  }
-
-  useEffect(() => {
-    document.title = "Jual " + product.name + " | Manunggal Corp";
-  }, []);
-
+  }  
   return (
     <div className="w-full flex justify-center mt-14">
       <div className="xl:max-w-[1360px] w-full">

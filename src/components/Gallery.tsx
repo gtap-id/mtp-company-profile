@@ -5,10 +5,12 @@ import { useNavigate } from "react-router-dom";
 const Gallery = () => {
   const navigate = useNavigate();
 
-  if (location.pathname.startsWith("/gallery")) {
     useEffect(() => {
-      document.title = "Project Showcase | Manunggal Corp";
+      if (location.pathname.startsWith("/gallery")) {
+        document.title = "Project Showcase | Manunggal Corp";
+      }
     }, []);
+  if (location.pathname.startsWith("/gallery")) {
 
     return (
       <div className="w-full flex justify-center mt-14">
