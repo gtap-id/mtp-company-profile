@@ -1,4 +1,4 @@
-import Logo from "../assets/Logo MTP.png";
+import Logo from "../assets/Logo MTP + text (samping).svg";
 import { RiMailFill, RiWhatsappFill } from "@remixicon/react";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
           <footer className="flex flex-col gap-6 justify-center items-center text-white pt-6">
             <div className="flex md:flex-row flex-col gap-y-4 gap-3 items-start justify-center w-full">
               <div className="basis-2/6 flex md:flex-col gap-4">
-                <img src={Logo} alt="" className="sm:w-24 w-16" />
+                <img src={Logo} alt="" className="sm:w-60 w-34" />
                 <p className="max-w-[312px] sm:text-base text-sm">
                   Lorem ipsum dolor sit Amet. Simit Axemplar
                 </p>

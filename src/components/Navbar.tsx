@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/Logo MTP + text.png";
+import Logo from "../assets/Logo MTP + text (bawah).svg";
 import { nav } from "../constants";
 import clsx from "clsx";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -60,7 +60,7 @@ const Navbar = () => {
               onClick={() => navigate("/")}
               src={Logo}
               alt="mtp"
-              className="w-24 xl:w-40 cursor-pointer"
+              className="w-24 xl:w-40 cursor-pointer "
             />
             <div className="flex items-center md:pr-12">
               {isHome == 1 ? (

@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className="flex text-primary gap-4 min-h-screen items-center">
-      <div className="flex flex-col gap-5 sm:basis-1/2 basis-3/4">
+      <div className="flex z-[1] flex-col gap-5 sm:basis-1/2 basis-3/4">
         <div>
           <h1 className="inline-block sm:text-4xl font-semibold sm:border-b-8 border-b-[5px] border-b-secondary py-2 mb-2">
             PT. Manunggal Teknik Persada
@@ -23,6 +23,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      <div className="absolute left-0 w-full h-screen bg-gradient-to-tr from-white to-transparent"></div>
+      <div className="absolute left-0 w-full h-screen bg-gradient-to-t from-white via-transparent"></div>
     </div>
   );
 };

@@ -13,10 +13,10 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <>      
       <div
         id="home"
-        className="bg-hero bg-cover bg-no-repeat bg-center xl:bg-top flex justify-center items-center"
+        className="bg-hero bg-cover bg-no-repeat bg-center xl:bg-top flex justify-center items-center relative"
       >
         <div className="xl:max-w-[1280px] w-full 2xl:px-0 px-10">
           <Hero />
