@@ -17,7 +17,7 @@ const Gallery = () => {
   }
 
   return (
-    <div className="w-full flex justify-center mt-14">
+    <div className="w-full flex justify-center mt-20">
       <div className="xl:max-w-[1360px] w-full">
         <div className="sm:px-16 px-6 sm:py-16 py-6 w-full">
           <div className="flex flex-col items-center gap-8 relative">

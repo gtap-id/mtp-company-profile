@@ -4,13 +4,17 @@ import {
   WrenchScrewdriverIcon,
 } from "@heroicons/react/24/solid";
 import { PencilIcon } from "@heroicons/react/24/solid";
-import cargoLift from "../assets/cargo-lift.jpg";
-import passengerLift from "../assets/passenger-lift.jpg";
-import chainHoist from "../assets/chain-hoist.jpg";
-import ropeHoist from "../assets/rope-hoist.jpg";
-// import generator from "../assets/generator.jpg";
-// import gantryCrane from "../assets/gantry-crane.jpg";
-// import overheadCrane from "../assets/overhead-crane.jpg";
+
+import demagChainHoist from "../assets/product/demag-chain-hoist.jpg";
+import hitachiChainHoist from "../assets/product/hitachi-chain-hoist.png";
+import demagRopeHoist from "../assets/product/demag-rope-hoist.png";
+import hitachiRopeHoist from "../assets/product/hitachi-rope-hoist.jpg";
+import mitsubishiRopeHoist from "../assets/product/mitsubishi-rope-hoist.png";
+import overheadCrane from "../assets/product/overhead-crane.jpg";
+import gantryCrane from "../assets/product/gantry-crane.jpg";
+import semiGantryCrane from "../assets/product/semigantry-crane.jpg";
+import monorailCrane from "../assets/product/monorail-crane.jpg";
+import underhungCrane from "../assets/product/underhung-crane.jpg";
 
 import logoMeidoh from "../assets/logo-meidoh.png";
 import logoCitra from "../assets/logo_citra.png";
@@ -52,8 +56,25 @@ export const nav = [
     title: "Customers",
   },
   {
-    id: "products",
     title: "Products",
+    child: [
+      {
+        id: "hoist",
+        title: "Hoist",
+      },
+      {
+        id: "crane",
+        title: "Crane",
+      },
+      {
+        id: "lift",
+        title: "Lift",
+      },
+      {
+        id: "generator",
+        title: "Generator",
+      },
+    ],
   },
   {
     id: "gallery",
@@ -142,14 +163,145 @@ export const customers = [
 
 export const products = [
   {
-    id: "chain-hoist",
-    name: "Chain Hoist",
+    id: "hoist",
+    name: "Hoist",
+    header: "",
+    subCategory: [
+      {
+        id: "chain-hoist",
+        name: "Chain Hoist",
+        header: "",
+        product: [
+          {
+            id: "demag-chain-hoist",
+            name: "Demag Chain Hoist",
+            brand: "Demag",
+            manufacture: "Location A, Location B",
+            contact: [
+              {
+                name: "Bayu",
+                number: "",
+              },
+              {
+                name: "Adi",
+                number: "",
+              },
+              {
+                name: "Ida",
+                number: "",
+              },
+            ],
+            photo: demagChainHoist,
+            description: "Lorem ipsum dolor sit amet.",
+          },
+          {
+            id: "hitachi-chain-hoist",
+            name: "Hitachi Chain Hoist",
+            brand: "Hitachi",
+            manufacture: "Location A, Location B",
+            contact: [
+              {
+                name: "Bayu",
+                number: "",
+              },
+              {
+                name: "Adi",
+                number: "",
+              },
+              {
+                name: "Ida",
+                number: "",
+              },
+            ],
+            photo: hitachiChainHoist,
+            description: "Lorem ipsum dolor sit amet.",
+          },
+        ],
+      },
+      {
+        id: "rope-hoist",
+        name: "Rope Hoist",
+        header: "",
+        product: [
+          {
+            id: "demag-rope-hoist",
+            name: "Demag Rope Hoist",
+            brand: "Demag",
+            manufacture: "Location A, Location B",
+            contact: [
+              {
+                name: "Bayu",
+                number: "",
+              },
+              {
+                name: "Adi",
+                number: "",
+              },
+              {
+                name: "Ida",
+                number: "",
+              },
+            ],
+            photo: demagRopeHoist,
+            description: "Lorem ipsum dolor sit amet.",
+          },
+          {
+            id: "hitachi-rope-hoist",
+            name: "Hitachi Rope Hoist",
+            brand: "Hitachi",
+            manufacture: "Location A, Location B",
+            contact: [
+              {
+                name: "Bayu",
+                number: "",
+              },
+              {
+                name: "Adi",
+                number: "",
+              },
+              {
+                name: "Ida",
+                number: "",
+              },
+            ],
+            photo: hitachiRopeHoist,
+            description: "Lorem ipsum dolor sit amet.",
+          },
+          {
+            id: "mitsubishi-rope-hoist",
+            name: "Mitsubishi Rope Hoist",
+            brand: "Mitsubishi",
+            manufacture: "Location A, Location B",
+            contact: [
+              {
+                name: "Bayu",
+                number: "",
+              },
+              {
+                name: "Adi",
+                number: "",
+              },
+              {
+                name: "Ida",
+                number: "",
+              },
+            ],
+            photo: mitsubishiRopeHoist,
+            description: "Lorem ipsum dolor sit amet.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "lift",
+    name: "Lift",
     header: "",
     product: [
       {
-        id: "product1",
-        name: "product",
-        brand: "brand",
+        id: "mitsubishi",
+        name: "Mitsubishi",
+        brand: "Mitsubishi",
         manufacture: "Location A, Location B",
         contact: [
           {
@@ -165,64 +317,19 @@ export const products = [
             number: "",
           },
         ],
-        photo: chainHoist,
-        description: "Lorem ipsum dolor sit amet.",
-      },
-      {
-        id: "product2",
-        name: "product",
-        brand: "brand",
-        manufacture: "Location A, Location B",
-        contact: [
-          {
-            name: "Bayu",
-            number: "",
-          },
-          {
-            name: "Adi",
-            number: "",
-          },
-          {
-            name: "Ida",
-            number: "",
-          },
-        ],
-        photo: chainHoist,
-        description: "Lorem ipsum dolor sit amet.",
-      },
-      {
-        id: "product3",
-        name: "product",
-        brand: "brand",
-        manufacture: "Location A, Location B",
-        contact: [
-          {
-            name: "Bayu",
-            number: "",
-          },
-          {
-            name: "Adi",
-            number: "",
-          },
-          {
-            name: "Ida",
-            number: "",
-          },
-        ],
-        photo: chainHoist,
+        photo: overheadCrane,
         description: "Lorem ipsum dolor sit amet.",
       },
     ],
   },
   {
-    id: "rope-hoist",
-    name: "Rope Hoist",
+    id: "crane",
+    name: "Crane",
     header: "",
     product: [
       {
-        id: "product4",
-        name: "product",
-        brand: "brand",
+        id: "overhead-crane",
+        name: "Overhead Crane",
         manufacture: "Location A, Location B",
         contact: [
           {
@@ -238,13 +345,12 @@ export const products = [
             number: "",
           },
         ],
-        photo: ropeHoist,
+        photo: overheadCrane,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
-        id: "product5",
-        name: "product",
-        brand: "brand",
+        id: "gantry-crane",
+        name: "Gantry Crane",
         manufacture: "Location A, Location B",
         contact: [
           {
@@ -260,13 +366,12 @@ export const products = [
             number: "",
           },
         ],
-        photo: ropeHoist,
+        photo: gantryCrane,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
-        id: "product6",
-        name: "product",
-        brand: "brand",
+        id: "semi-gantry-crane",
+        name: "Semi Gantry Crane",
         manufacture: "Location A, Location B",
         contact: [
           {
@@ -282,42 +387,12 @@ export const products = [
             number: "",
           },
         ],
-        photo: ropeHoist,
-        description: "Lorem ipsum dolor sit amet.",
-      },
-    ],
-  },
-  {
-    id: "cargo-lift",
-    name: "Cargo Lift",
-    header: "",
-    product: [
-      {
-        id: "product7",
-        name: "product",
-        brand: "brand",
-        manufacture: "Location A, Location B",
-        contact: [
-          {
-            name: "Bayu",
-            number: "",
-          },
-          {
-            name: "Adi",
-            number: "",
-          },
-          {
-            name: "Ida",
-            number: "",
-          },
-        ],
-        photo: cargoLift,
+        photo: semiGantryCrane,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
-        id: "product8",
-        name: "product",
-        brand: "brand",
+        id: "monorail-crane",
+        name: "Monorail Crane",
         manufacture: "Location A, Location B",
         contact: [
           {
@@ -333,13 +408,12 @@ export const products = [
             number: "",
           },
         ],
-        photo: cargoLift,
+        photo: monorailCrane,
         description: "Lorem ipsum dolor sit amet.",
       },
       {
-        id: "product9",
-        name: "product",
-        brand: "brand",
+        id: "underhung-crane",
+        name: "Underhung Crane",
         manufacture: "Location A, Location B",
         contact: [
           {
@@ -355,112 +429,59 @@ export const products = [
             number: "",
           },
         ],
-        photo: cargoLift,
-        description: "Lorem ipsum dolor sit amet.",
-      },
-    ],
-  },
-  {
-    id: "passenger-lift",
-    name: "Passenger Lift",
-    header: "",
-    product: [
-      {
-        id: "product10",
-        name: "product",
-        brand: "brand",
-        manufacture: "Location A, Location B",
-        contact: [
-          {
-            name: "Bayu",
-            number: "",
-          },
-          {
-            name: "Adi",
-            number: "",
-          },
-          {
-            name: "Ida",
-            number: "",
-          },
-        ],
-        photo: passengerLift,
-        description: "Lorem ipsum dolor sit amet.",
-      },
-      {
-        id: "product11",
-        name: "product",
-        brand: "brand",
-        manufacture: "Location A, Location B",
-        contact: [
-          {
-            name: "Bayu",
-            number: "",
-          },
-          {
-            name: "Adi",
-            number: "",
-          },
-          {
-            name: "Ida",
-            number: "",
-          },
-        ],
-        photo: passengerLift,
-        description: "Lorem ipsum dolor sit amet.",
-      },
-      {
-        id: "product12",
-        name: "product",
-        brand: "brand",
-        manufacture: "Location A, Location B",
-        contact: [
-          {
-            name: "Bayu",
-            number: "",
-          },
-          {
-            name: "Adi",
-            number: "",
-          },
-          {
-            name: "Ida",
-            number: "",
-          },
-        ],
-        photo: passengerLift,
+        photo: underhungCrane,
         description: "Lorem ipsum dolor sit amet.",
       },
     ],
   },
 ];
 
-export function getCategory(categoryId:string) {
+export function getCategory(categoryId: string) {
   return products.find(({ id }) => categoryId === id);
 }
 
-export function getProduct(categoryId:string, productId: string) {
+export function getSubCategory(categoryId: string, subCategoryId: string) {
+  const category = getCategory(categoryId);
+  if (category && category.subCategory) {
+    return category.subCategory.find(({ id }) => subCategoryId === id);
+  }
+}
+
+export function getProduct(categoryId: string, productId: string) {
   const category = getCategory(categoryId);
   if (category) {
-    return category.product.find(({ id }) => productId === id);
+    if (category.subCategory) {
+      for (const subCategory of category.subCategory) {
+        const product = subCategory.product.find(({ id }) => productId === id);
+        if (product) {
+          return product;
+        }
+      }
+    }
+    if (category.product) {
+      const product = category.product.find(({ id }) => productId === id);
+      if (product) {
+        return product;
+      }
+    }
   }
   return null;
 }
- 
 
 export const galleries = [
   {
     id: "1",
     title: "Project Bla Bla Bla1",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -470,14 +491,15 @@ export const galleries = [
     id: "2",
     title: "Project Bla Bla Bla2",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -487,14 +509,15 @@ export const galleries = [
     id: "3",
     title: "Project Bla Bla Bla3",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -504,14 +527,15 @@ export const galleries = [
     id: "4",
     title: "Project Bla Bla Bla4",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -521,14 +545,15 @@ export const galleries = [
     id: "5",
     title: "Project Bla Bla Bla5",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -538,14 +563,15 @@ export const galleries = [
     id: "6",
     title: "Project Bla Bla Bla6",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -555,14 +581,15 @@ export const galleries = [
     id: "7",
     title: "Project Bla Bla Bla7",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -572,14 +599,15 @@ export const galleries = [
     id: "8",
     title: "Project Bla Bla Bla8",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -589,14 +617,15 @@ export const galleries = [
     id: "9",
     title: "Project Bla Bla Bla9",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -606,14 +635,15 @@ export const galleries = [
     id: "10",
     title: "Project Bla Bla Bla10",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -623,14 +653,15 @@ export const galleries = [
     id: "11",
     title: "Project Bla Bla Bla11",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -640,14 +671,15 @@ export const galleries = [
     id: "12",
     title: "Project Bla Bla Bla12",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -657,14 +689,15 @@ export const galleries = [
     id: "13",
     title: "Project Bla Bla Bla13",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -674,14 +707,15 @@ export const galleries = [
     id: "14",
     title: "Project Bla Bla Bla14",
     subtitle: "PT Ayam Jago",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod sit amet ante id rhoncus. Donec imperdiet, sapien nec efficitur feugiat, quam lacus dictum ex.",
     product: [
       {
         category: "",
         categoryId: "",
         product: "",
-        productId: ""
-      }
+        productId: "",
+      },
     ],
     location: "Location A, Location B",
     date: "12/02/2024",
@@ -689,6 +723,6 @@ export const galleries = [
   },
 ];
 
-export const getGallery = ( galleryId: string ) => {
-  return galleries.find(({id}) => galleryId === id);
-}
+export const getGallery = (galleryId: string) => {
+  return galleries.find(({ id }) => galleryId === id);
+};

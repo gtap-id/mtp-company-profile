@@ -4,12 +4,18 @@ import { nav } from "../constants";
 import clsx from "clsx";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
+import {
+  Bars3BottomRightIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+} from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navState, setNavState] = React.useState(0);
   const [sideNavState, setSideNavState] = React.useState(0);
   const [isHome, setIsHome] = React.useState(0);
+  const [dropdown, setDropdown] = React.useState(0);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -69,7 +75,7 @@ const Navbar = () => {
                     onClick={() => navigate(-1)}
                     className="flex items-center sm:gap-4 gap-2 cursor-pointer py-1 px-3 group-hover:opacity-65"
                   >
-                    <ArrowLeftIcon className="w-6" />
+                    <ArrowLeftIcon className="w-6 select-none" />
                     Back
                   </div>
                   <div className="transition-all border-t-2 border-t-secondary w-0 group-hover:w-full"></div>
@@ -77,12 +83,50 @@ const Navbar = () => {
               ) : (
                 <>
                   <ul className="list-none sm:flex hidden items-center gap-4 lg:gap-8">
-                    {nav.map((nav) => (
+                    {nav.map((nav, index) => (
                       <li
                         key={nav.id}
-                        className="transition-all text-base lg:text-lg border-b-2 border-b-transparent hover:border-b-secondary hover:scale-105"
+                        className="transition-all text-base lg:text-lg border-b-2 border-b-transparent hover:border-b-secondary hover:scale-105 relative"
+                        onClick={() => {
+                          if (nav.child) {
+                            if (dropdown == 0) {
+                              setDropdown(index);
+                            } else {
+                              setDropdown(0);
+                            }
+                          }
+                        }}
                       >
-                        <a href={`/#${nav.id}`}>{nav.title}</a>
+                        {nav.child ? (
+                          <p className="cursor-pointer select-none flex gap-2">
+                            {nav.title}
+                            {dropdown == index ? (
+                              <ChevronDownIcon className="w-4" />
+                            ) : (
+                              <ChevronUpIcon className="w-4" />
+                            )}
+                          </p>
+                        ) : (
+                          <a href={`/#${nav.id}`}>{nav.title}</a>
+                        )}
+                        {nav.child ? (
+                          <div
+                            className={clsx(
+                              "w-auto min-w-full absolute bg-white text-primary hidden flex-col text-nowrap mt-2 shadow-md",
+                              dropdown == index && "!flex"
+                            )}
+                          >
+                            {nav.child?.map((child) => (
+                              <a
+                                key={child.id}
+                                href={`/product/${child.id}`}
+                                className="hover:bg-light-gray px-3 py-1"
+                              >
+                                {child.title}
+                              </a>
+                            ))}
+                          </div>
+                        ) : null}
                       </li>
                     ))}
                     <a
@@ -94,7 +138,10 @@ const Navbar = () => {
                   </ul>
                   <Bars3BottomRightIcon
                     onClick={handleNav}
-                    className="w-6 sm:hidden block text-primary"
+                    className={clsx(
+                      "w-6 sm:hidden block",
+                      sideNavState == 1 && "text-primary"
+                    )}
                   />
                 </>
               )}
@@ -109,12 +156,50 @@ const Navbar = () => {
         )}
       >
         <ul className="list-none flex flex-col items-start gap-2 justify-center w-full">
-          {nav.map((nav) => (
+          {nav.map((nav, index) => (
             <li
               key={nav.id}
-              className="transition-all text-base lg:text-lg border-b-2 border-b-transparent hover:border-b-secondary hover:scale-105"
+              className="transition-all text-base lg:text-lg border-b-2 border-b-transparent hover:border-b-secondary hover:scale-105 relative"
+              onClick={() => {
+                if (nav.child) {
+                  if (dropdown == 0) {
+                    setDropdown(index);
+                  } else {
+                    setDropdown(0);
+                  }
+                }
+              }}
             >
-              <a href={`/#${nav.id}`}>{nav.title}</a>
+              {nav.child ? (
+                <p className="cursor-pointer select-none flex gap-2">
+                  {nav.title}
+                  {dropdown == index ? (
+                    <ChevronDownIcon className="w-4" />
+                  ) : (
+                    <ChevronUpIcon className="w-4" />
+                  )}
+                </p>
+              ) : (
+                <a href={`/#${nav.id}`}>{nav.title}</a>
+              )}
+              {nav.child ? (
+                <div
+                  className={clsx(
+                    "w-auto min-w-full absolute bg-white text-primary hidden flex-col text-nowrap shadow-md left-[-6.5rem] top-0",
+                    dropdown == index && "!flex"
+                  )}
+                >
+                  {nav.child?.map((child) => (
+                    <Link
+                      key={child.id}
+                      to={``}
+                      className="hover:bg-light-gray px-3 py-1"
+                    >
+                      {child.title}
+                    </Link>
+                  ))}
+                </div>
+              ) : null}
             </li>
           ))}
         </ul>

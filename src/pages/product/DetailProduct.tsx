@@ -29,9 +29,9 @@ const DetailProduct = () => {
 
   if (!product) {
     return <Navigate to="/notfound" />;
-  }  
+  }
   return (
-    <div className="w-full flex justify-center mt-14">
+    <div className="w-full flex justify-center mt-20">
       <div className="xl:max-w-[1360px] w-full">
         <div className="sm:px-16 px-6 sm:py-16 py-6 w-full">
           <div className="flex flex-col items-center gap-8 relative">
@@ -53,15 +53,17 @@ const DetailProduct = () => {
                     {product.name}
                   </h1>
                   <div className="flex flex-col justify-between h-full">
-                    <div className="flex flex-col gap-2">
-                      <div className="flex items-center gap-2">
-                        <div className="flex items-center gap-2 font-semibold">
-                          <TagIcon className="w-6" />
-                          Brand :
+                    {/* {if (product.brand) ? (
+                      <div className="flex flex-col gap-2">
+                        <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-2 font-semibold">
+                            <TagIcon className="w-6" />
+                            Brand :
+                          </div>
+                          {product.brand}
                         </div>
-                        {product.brand}
                       </div>
-                    </div>
+                    ) : null} */}
                     <div className="flex flex-col gap-4 items-center p-12">
                       <div className="flex flex-col items-center">
                         <h1 className="text-center font-semibold">

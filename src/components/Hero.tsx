@@ -23,7 +23,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="absolute left-0 w-full h-screen bg-gradient-to-tr from-white to-transparent"></div>
+      <div className="absolute left-0 w-full h-screen bg-gradient-to-bl from-black via-transparent opacity-75"></div>
+      <div className="absolute left-0 w-full h-screen bg-gradient-to-r from-white to-transparent"></div>
       <div className="absolute left-0 w-full h-screen bg-gradient-to-t from-white via-transparent"></div>
     </div>
   );

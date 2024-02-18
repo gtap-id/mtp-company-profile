@@ -11,11 +11,21 @@ const Products = () => {
         {products.map((category) => (
           <a
             className="w-full bg-slate-100 rounded-lg overflow-hidden"
-            href={`/product/${category.id}`}
+            href={`/product/category/${category.id}`}
           >
             <div
               key={category.id}
-              style={{ backgroundImage: `url(${category.product[0].photo})` }}
+              style={{
+                backgroundImage: `url(${
+                  category.subCategory ?
+                    category.subCategory[0].product[0].photo
+                  :
+                  category.product && category.product.length > 0
+                    ? category.product[0].photo
+                  : 
+                    ""
+                })`,
+              }}
               className={
                 "group transition w-full rectangle flex items-end bg-center bg-contain bg-no-repeat cursor-pointer relative"
               }

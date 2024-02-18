@@ -20,16 +20,16 @@ const Footer = () => {
                     <h1 className="font-medium">Lokasi Kami</h1>
                     <ul className="list-none">
                       <li className="font-extralight leading-6">
-                        Rukan Puri Mutiara Blok A76
+                        Modern Multi Bussiness Bizpoint
                       </li>
                       <li className="font-extralight leading-6">
-                        Jl. Griya Utama, Sunter Agung
+                        Blok R5 No.12 No.12 Sukamulya
                       </li>
                       <li className="font-extralight leading-6">
-                        Kec. Tanjung Priok
+                        Kec. Cikupa Kab. Tangerang
                       </li>
                       <li className="font-extralight leading-6">
-                        Kota Adm Jakarta Utara
+                        Provinsi Banten
                       </li>
                     </ul>
                   </div>
